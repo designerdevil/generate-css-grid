@@ -1,33 +1,53 @@
 # How and What to author
 System uses mobile first approach
-
-- Add number of columns needed
-- Add gutter space required
-- Add common class name prefix
-     
-    
-- Choose fluidity
-- If fluid then fractionize everything
-- If fixed fluidity - add fixed container max width
-- If fixed fluidity - add min margin
-    
-    
+      
+### Choose grid type
+- Add Grid type
+- Add number of columns
+      
+### Customization
+- Set container classname
+- Set column prefix classname
+- Set row classname
+        
+### Configuration    
 - Add breakpoint set 
 - Add breakpoint margin
 - Add breakpoint gutter
-- Add class name breakpoint
+- Add class name
+- Add minWidth
+- Add order (!important)
 
+      
+### Example for breakpoint configuration
 
 ```
 [{
-   "breakpoint": 772,
-   "margin": "40px",
-   "gutter": "20px",
-   "class": "tb"
+    "order": "1",
+    "breakpoint": "0",
+    "minWidth": "500",
+    "margin": "15",
+    "gutter": "10",
+    "class": "mob-"
 },{
-   "breakpoint": 992,
-   "margin": "40px",
-   "gutter": "20px",
-   "class": "desk"
+    "order": "2",
+    "breakpoint": "772",
+    "minWidth": "800",
+    "margin": "40",
+    "gutter": "20",
+    "class": "tb-"
+},{
+    "order": "3",
+    "breakpoint": "992",
+    "minWidth": "1280",
+    "margin": "80",
+    "gutter": "40",
+    "class": "desk-"
 }]
 ```
+
+
+### Whats next?    
+After adding your setting/configuration. Click on Generate.
+Your css and html will be generated in dist folder     
+     
