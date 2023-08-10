@@ -1,4 +1,10 @@
-# How and What to author
+## Setup
+```
+npm install
+npm run start
+```
+    
+## How and What to author?
 System uses mobile first approach
       
 ### Choose grid type
