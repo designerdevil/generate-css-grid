@@ -1,0 +1,26 @@
+
+		.myrow { display: grid; width: 100%; gap: 10px; grid-template-columns: repeat(4, 1fr); }
+				.myContainer { width: 100%; margin: 0 auto; max-width:500px; }
+				.mycol-mob-4 { grid-column: span 4 }
+					.mycol-mob-3 { grid-column: span 3 }
+					.mycol-mob-2 { grid-column: span 2 }
+					.mycol-mob-1 { grid-column: span 1 }
+					
+				@media only screen and (min-width: 772px) {
+				.myrow { display: grid; width: 100%; gap: 20px; grid-template-columns: repeat(4, 1fr); }
+				.myContainer { width: 100%; margin: 0 auto; max-width:800px; }
+				.mycol-tb-4 { grid-column: span 4 }
+					.mycol-tb-3 { grid-column: span 3 }
+					.mycol-tb-2 { grid-column: span 2 }
+					.mycol-tb-1 { grid-column: span 1 }
+					}
+				
+				@media only screen and (min-width: 992px) {
+				.myrow { display: grid; width: 100%; gap: 40px; grid-template-columns: repeat(4, 1fr); }
+				.myContainer { width: 100%; margin: 0 auto; max-width:1280px; }
+				.mycol-desk-4 { grid-column: span 4 }
+					.mycol-desk-3 { grid-column: span 3 }
+					.mycol-desk-2 { grid-column: span 2 }
+					.mycol-desk-1 { grid-column: span 1 }
+					}
+				

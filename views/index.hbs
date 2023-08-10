@@ -1,0 +1,70 @@
+<h1>{{title}}</h1>
+<p>Enter details of your {{title}}</p>
+<section class="form-container">
+  <form action="#" method="POST" enctype="multipart/form-data">
+    <div class="item">
+        <div class="title">Grid Type</div>
+        <div class="form-block">
+            <label for="grid-isfluid">Is Grid Fluid (y/n)</label>
+            <select  name="grid-isfluid" id="grid-isfluid">
+                <option value="false" selected>No</option>
+                <option value="true">Yes</option>
+            </select>
+        </div>
+        <div class="form-block">
+            <label for="col-count">Number of columns</label>
+            <input type="text" name="col-count" id="col-count" value="8" />
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">Customization</div>
+        <div class="form-block">
+            <label for="container-name">Class name for container</label>
+            <input type="text" name="container-name" id="container-name" value="myContainer" />
+        </div>
+        <div class="form-block">
+            <label for="col-name">Class name for column prefix</label>
+            <input type="text" name="col-name" id="col-name" value="mycol-" />
+        </div>
+        <div class="form-block">
+            <label for="row-name">Class name for row</label>
+            <input type="text" name="row-name" id="row-name" value="myrow" />
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">Breakpoint</div>
+        <div class="form-block">
+            <label for="breakpoint">Modify breakpoint configuration</label>
+            <textarea id="breakpoint" name="breakpoint" rows="4" cols="50">
+[{
+    "order": "1",
+    "breakpoint": "0",
+    "minWidth": "500",
+    "margin": "15",
+    "gutter": "10",
+    "class": "mob-"
+},{
+    "order": "2",
+    "breakpoint": "772",
+    "minWidth": "800",
+    "margin": "40",
+    "gutter": "20",
+    "class": "tb-"
+},{
+    "order": "3",
+    "breakpoint": "992",
+    "minWidth": "1280",
+    "margin": "80",
+    "gutter": "40",
+    "class": "desk-"
+}]
+            </textarea>
+        </div>
+    </div>
+    <div class="item full-width">
+        <div class="form-block">  
+            <button type="submit">Generate Grid</button>
+        </div>
+    </div>
+  </form>
+</section>
