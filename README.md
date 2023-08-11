@@ -33,7 +33,7 @@ System uses mobile first approach
     {
         "order": "2", // breakpoint order according to Mobile first approach
         "breakpoint": "772", // breakpoint value
-        "minWidth": "800", // minimum width beyond which breakpoint will work
+        "maxWidth": "800", // minimum width beyond which breakpoint will work
         "margin": "40", // minimum space from screen beyond width
         "gutter": "20", // gutter between the columns
         "class": "tb-" // class name for the breakpoint

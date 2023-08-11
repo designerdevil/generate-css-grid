@@ -72,7 +72,7 @@ const util = {
 		breakpointArray.forEach((item, index) => {
 			const itemColClass = item.class;
 			const breakpoint = item.breakpoint;
-			const fixedWidthCss = (isFluid === "false") ? `max-width: calc(${item.minWidth}px + ${item.margin}px + ${item.margin}px)` : '';
+			const fixedWidthCss = (isFluid === "false") ? `max-width: calc(${item.maxWidth}px + ${item.margin}px + ${item.margin}px)` : '';
 			
 			if(!index) {
 				cssRules += `
