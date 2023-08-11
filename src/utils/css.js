@@ -1,6 +1,11 @@
+function getRandomColor() {
+	const r = Math.floor(Math.random() * 256);
+	const g = Math.floor(Math.random() * 256);
+	const b = Math.floor(Math.random() * 256);
+	return `rgb(${r},${g},${b})`
+}
 const util = {
 	generateMarkup: (config = {}) => {
-		const isFluid = config['grid-isfluid']
 		const colCount = parseInt(config['col-count'] || 12);
 		const containerName = config['container-name']
 		const colNamePrefix = config['col-name']
@@ -17,17 +22,16 @@ const util = {
 		<link rel="stylesheet" href="style.css?q=${Math.random()}">
 		<style>
 			body {margin: 0; padding: 0}
-			.myContainer { position: relative; }
-			.myrow { margin: 20px 0; }
-			.myrow > div {background: #5f7eb0; border: 1px solid #ccc; }
-			.myrow > div::before { content:''; height: 30px; display: inline-block; }
-			.myrow:nth-child(even) > div {background: #367d7d;}
-			.myrow:first-child { position: absolute; height: calc(100%); opacity: 0.1; z-index: -1;}
-			.myrow:first-child > div { background: rgb(0, 0, 0); }
+			.${rowName} { margin: 20px 0; }
+			.${rowName} > div {background: ${getRandomColor()}; border: 1px solid #333; }
+			.${rowName} > div::before { content:''; height: 30px; display: inline-block; }
+			.${rowName}:nth-child(even) > div {background: ${getRandomColor()};}
+			.${rowName}:first-child > div { background: ${getRandomColor()}; position:relative; }
+			.${rowName}:first-child > div::before {content:''; position: absolute; height: 80vh; opacity: 0.2; z-index: -1; width: 100%; background: #000;}
 		</style>
 		</head>
 		<body>
-		<div class="myContainer">
+		<div class="${containerName}">
 		<div class="${rowName}">`;
 		for (let count = colCount; count > 0; count--) {
 			const class1 = breakpointArray.reduce((a, c) => {a += `${colNamePrefix}${c.class}1 `; return a;}, '')
@@ -68,12 +72,13 @@ const util = {
 		breakpointArray.forEach((item, index) => {
 			const itemColClass = item.class;
 			const breakpoint = item.breakpoint;
-			const fixedWidthCss = (isFluid === "false") ? 'max-width:'+item.minWidth : '';
+			const fixedWidthCss = (isFluid === "false") ? `max-width: calc(${item.minWidth}px + ${item.margin}px + ${item.margin}px)` : '';
 			
 			if(!index) {
 				cssRules += `
+				* { box-sizing: border-box;}
 				.${rowName} { display: grid; width: 100%; gap: ${item.gutter}px; grid-template-columns: repeat(${colCount}, 1fr); }
-				.${containerName} { width: 100%; margin: 0 auto; ${fixedWidthCss}px; }
+				.${containerName} { width: 100%; margin: 0 auto; ${fixedWidthCss}; padding-left: ${item.margin}px  ; padding-right:  ${item.margin}px; }
 				`
 				for (let count = colCount; count > 0; count--) {
 					cssRules += `.${colNamePrefix}${itemColClass}${count} { grid-column: span ${count} }
@@ -83,7 +88,7 @@ const util = {
 				cssRules += `
 				@media only screen and (min-width: ${breakpoint}px) {
 				.${rowName} { display: grid; width: 100%; gap: ${item.gutter}px; grid-template-columns: repeat(${colCount}, 1fr); }
-				.${containerName} { width: 100%; margin: 0 auto; ${fixedWidthCss}px; }
+				.${containerName} { ${fixedWidthCss};  padding-left: ${item.margin}px  ; padding-right:  ${item.margin}px; }
 				`
 				for (let count = colCount; count > 0; count--) {
 					cssRules += `.${colNamePrefix}${itemColClass}${count} { grid-column: span ${count} }

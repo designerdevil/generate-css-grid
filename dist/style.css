@@ -1,24 +1,43 @@
 
-		.myrow { display: grid; width: 100%; gap: 10px; grid-template-columns: repeat(4, 1fr); }
-				.myContainer { width: 100%; margin: 0 auto; max-width:500px; }
-				.mycol-mob-4 { grid-column: span 4 }
+		* { box-sizing: border-box;}
+				.myrow { display: grid; width: 100%; gap: 10px; grid-template-columns: repeat(10, 1fr); }
+				.container { width: 100%; margin: 0 auto; max-width: calc(500px + 15px + 15px); padding-left: 15px  ; padding-right:  15px; }
+				.mycol-mob-10 { grid-column: span 10 }
+					.mycol-mob-9 { grid-column: span 9 }
+					.mycol-mob-8 { grid-column: span 8 }
+					.mycol-mob-7 { grid-column: span 7 }
+					.mycol-mob-6 { grid-column: span 6 }
+					.mycol-mob-5 { grid-column: span 5 }
+					.mycol-mob-4 { grid-column: span 4 }
 					.mycol-mob-3 { grid-column: span 3 }
 					.mycol-mob-2 { grid-column: span 2 }
 					.mycol-mob-1 { grid-column: span 1 }
 					
 				@media only screen and (min-width: 772px) {
-				.myrow { display: grid; width: 100%; gap: 20px; grid-template-columns: repeat(4, 1fr); }
-				.myContainer { width: 100%; margin: 0 auto; max-width:800px; }
-				.mycol-tb-4 { grid-column: span 4 }
+				.myrow { display: grid; width: 100%; gap: 20px; grid-template-columns: repeat(10, 1fr); }
+				.container { max-width: calc(800px + 40px + 40px);  padding-left: 40px  ; padding-right:  40px; }
+				.mycol-tb-10 { grid-column: span 10 }
+					.mycol-tb-9 { grid-column: span 9 }
+					.mycol-tb-8 { grid-column: span 8 }
+					.mycol-tb-7 { grid-column: span 7 }
+					.mycol-tb-6 { grid-column: span 6 }
+					.mycol-tb-5 { grid-column: span 5 }
+					.mycol-tb-4 { grid-column: span 4 }
 					.mycol-tb-3 { grid-column: span 3 }
 					.mycol-tb-2 { grid-column: span 2 }
 					.mycol-tb-1 { grid-column: span 1 }
 					}
 				
 				@media only screen and (min-width: 992px) {
-				.myrow { display: grid; width: 100%; gap: 40px; grid-template-columns: repeat(4, 1fr); }
-				.myContainer { width: 100%; margin: 0 auto; max-width:1280px; }
-				.mycol-desk-4 { grid-column: span 4 }
+				.myrow { display: grid; width: 100%; gap: 40px; grid-template-columns: repeat(10, 1fr); }
+				.container { max-width: calc(1280px + 80px + 80px);  padding-left: 80px  ; padding-right:  80px; }
+				.mycol-desk-10 { grid-column: span 10 }
+					.mycol-desk-9 { grid-column: span 9 }
+					.mycol-desk-8 { grid-column: span 8 }
+					.mycol-desk-7 { grid-column: span 7 }
+					.mycol-desk-6 { grid-column: span 6 }
+					.mycol-desk-5 { grid-column: span 5 }
+					.mycol-desk-4 { grid-column: span 4 }
 					.mycol-desk-3 { grid-column: span 3 }
 					.mycol-desk-2 { grid-column: span 2 }
 					.mycol-desk-1 { grid-column: span 1 }
