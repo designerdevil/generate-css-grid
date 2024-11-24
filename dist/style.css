@@ -1,8 +1,12 @@
 
 		* { box-sizing: border-box;}
-				.myrow { display: grid; width: 100%; gap: 10px; grid-template-columns: repeat(8, 1fr); }
+				.myrow { display: grid; width: 100%; gap: 10px; grid-template-columns: repeat(12, 1fr); }
 				.myContainer { width: 100%; margin: 0 auto; max-width: calc(500px + 15px + 15px); padding-left: 15px  ; padding-right:  15px; }
-				.mycol-mob-8 { grid-column: span 8 }
+				.mycol-mob-12 { grid-column: span 12 }
+					.mycol-mob-11 { grid-column: span 11 }
+					.mycol-mob-10 { grid-column: span 10 }
+					.mycol-mob-9 { grid-column: span 9 }
+					.mycol-mob-8 { grid-column: span 8 }
 					.mycol-mob-7 { grid-column: span 7 }
 					.mycol-mob-6 { grid-column: span 6 }
 					.mycol-mob-5 { grid-column: span 5 }
@@ -12,9 +16,13 @@
 					.mycol-mob-1 { grid-column: span 1 }
 					
 				@media only screen and (min-width: 772px) {
-				.myrow { display: grid; width: 100%; gap: 20px; grid-template-columns: repeat(8, 1fr); }
+				.myrow { display: grid; width: 100%; gap: 20px; grid-template-columns: repeat(12, 1fr); }
 				.myContainer { max-width: calc(800px + 40px + 40px);  padding-left: 40px  ; padding-right:  40px; }
-				.mycol-tb-8 { grid-column: span 8 }
+				.mycol-tb-12 { grid-column: span 12 }
+					.mycol-tb-11 { grid-column: span 11 }
+					.mycol-tb-10 { grid-column: span 10 }
+					.mycol-tb-9 { grid-column: span 9 }
+					.mycol-tb-8 { grid-column: span 8 }
 					.mycol-tb-7 { grid-column: span 7 }
 					.mycol-tb-6 { grid-column: span 6 }
 					.mycol-tb-5 { grid-column: span 5 }
@@ -25,9 +33,13 @@
 					}
 				
 				@media only screen and (min-width: 992px) {
-				.myrow { display: grid; width: 100%; gap: 40px; grid-template-columns: repeat(8, 1fr); }
+				.myrow { display: grid; width: 100%; gap: 40px; grid-template-columns: repeat(12, 1fr); }
 				.myContainer { max-width: calc(1280px + 80px + 80px);  padding-left: 80px  ; padding-right:  80px; }
-				.mycol-desk-8 { grid-column: span 8 }
+				.mycol-desk-12 { grid-column: span 12 }
+					.mycol-desk-11 { grid-column: span 11 }
+					.mycol-desk-10 { grid-column: span 10 }
+					.mycol-desk-9 { grid-column: span 9 }
+					.mycol-desk-8 { grid-column: span 8 }
 					.mycol-desk-7 { grid-column: span 7 }
 					.mycol-desk-6 { grid-column: span 6 }
 					.mycol-desk-5 { grid-column: span 5 }

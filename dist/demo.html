@@ -1,18 +1,22 @@
 <!DOCTYPE html><html>
 		<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="style.css?q=0.5537028879471966">
+		<link rel="stylesheet" href="style.css?q=0.4209424203452503">
 		<style>
 			body {margin: 0; padding: 0}
+			h1 { padding: 30px; }
+			.sample-layout div, .sample-layout div::before { background: none !important; }
 			.myrow { margin: 20px 0; }
-			.myrow > div {background: rgb(244,157,85); border: 1px solid #333; }
+			.myrow > div {background: rgb(163,126,148); border: 1px solid #333; }
 			.myrow > div::before { content:''; height: 30px; display: inline-block; }
-			.myrow:nth-child(even) > div {background: rgb(42,174,218);}
-			.myrow:first-child > div { background: rgb(141,216,176); position:relative; }
+			.myrow:nth-child(even) > div {background: rgb(34,153,81);}
+			.myrow:first-child > div { background: rgb(243,218,37); position:relative; }
 			.myrow:first-child > div::before {content:''; position: absolute; height: 80vh; opacity: 0.2; z-index: -1; width: 100%; background: #000;}
 		</style>
 		</head>
 		<body>
+		<h1>Generated Grid System</h1>
+		<hr/>
 		<div class="myContainer">
 		<div class="myrow"><div class="mycol-mob-1 mycol-tb-1 mycol-desk-1 "></div>
 			<div class="mycol-mob-1 mycol-tb-1 mycol-desk-1 "></div>
@@ -22,27 +26,127 @@
 			<div class="mycol-mob-1 mycol-tb-1 mycol-desk-1 "></div>
 			<div class="mycol-mob-1 mycol-tb-1 mycol-desk-1 "></div>
 			<div class="mycol-mob-1 mycol-tb-1 mycol-desk-1 "></div>
+			<div class="mycol-mob-1 mycol-tb-1 mycol-desk-1 "></div>
+			<div class="mycol-mob-1 mycol-tb-1 mycol-desk-1 "></div>
+			<div class="mycol-mob-1 mycol-tb-1 mycol-desk-1 "></div>
+			<div class="mycol-mob-1 mycol-tb-1 mycol-desk-1 "></div>
 			</div><div class="myrow">
-					<div class="mycol-mob-8"></div>
+					<div class="mycol-mob-12"></div>
 				</div><div class="myrow">
-					<div class="mycol-mob-7 mycol-tb-7 mycol-desk-7 "></div>
+					<div class="mycol-mob-11 mycol-tb-11 mycol-desk-11 "></div>
 					<div class="mycol-mob-1 mycol-tb-1 mycol-desk-1 "></div>
 				</div><div class="myrow">
-					<div class="mycol-mob-6 mycol-tb-6 mycol-desk-6 "></div>
+					<div class="mycol-mob-10 mycol-tb-10 mycol-desk-10 "></div>
 					<div class="mycol-mob-2 mycol-tb-2 mycol-desk-2 "></div>
 				</div><div class="myrow">
-					<div class="mycol-mob-5 mycol-tb-5 mycol-desk-5 "></div>
+					<div class="mycol-mob-9 mycol-tb-9 mycol-desk-9 "></div>
 					<div class="mycol-mob-3 mycol-tb-3 mycol-desk-3 "></div>
 				</div><div class="myrow">
-					<div class="mycol-mob-4 mycol-tb-4 mycol-desk-4 "></div>
+					<div class="mycol-mob-8 mycol-tb-8 mycol-desk-8 "></div>
 					<div class="mycol-mob-4 mycol-tb-4 mycol-desk-4 "></div>
 				</div><div class="myrow">
-					<div class="mycol-mob-3 mycol-tb-3 mycol-desk-3 "></div>
+					<div class="mycol-mob-7 mycol-tb-7 mycol-desk-7 "></div>
 					<div class="mycol-mob-5 mycol-tb-5 mycol-desk-5 "></div>
+				</div><div class="myrow">
+					<div class="mycol-mob-6 mycol-tb-6 mycol-desk-6 "></div>
+					<div class="mycol-mob-6 mycol-tb-6 mycol-desk-6 "></div>
+				</div><div class="myrow">
+					<div class="mycol-mob-5 mycol-tb-5 mycol-desk-5 "></div>
+					<div class="mycol-mob-7 mycol-tb-7 mycol-desk-7 "></div>
+				</div><div class="myrow">
+					<div class="mycol-mob-4 mycol-tb-4 mycol-desk-4 "></div>
+					<div class="mycol-mob-8 mycol-tb-8 mycol-desk-8 "></div>
+				</div><div class="myrow">
+					<div class="mycol-mob-3 mycol-tb-3 mycol-desk-3 "></div>
+					<div class="mycol-mob-9 mycol-tb-9 mycol-desk-9 "></div>
 				</div><div class="myrow">
 					<div class="mycol-mob-2 mycol-tb-2 mycol-desk-2 "></div>
-					<div class="mycol-mob-6 mycol-tb-6 mycol-desk-6 "></div>
+					<div class="mycol-mob-10 mycol-tb-10 mycol-desk-10 "></div>
 				</div><div class="myrow">
 					<div class="mycol-mob-1 mycol-tb-1 mycol-desk-1 "></div>
-					<div class="mycol-mob-7 mycol-tb-7 mycol-desk-7 "></div>
-				</div></div></body></html>
+					<div class="mycol-mob-11 mycol-tb-11 mycol-desk-11 "></div>
+				</div></div>
+			&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />
+			<h1>Demo : Sample Layout</h1>
+			<hr/>
+			<div class="container sample-layout">
+				<div class="row content">
+					<div class="col-sm-3 sidenav">
+					<h4>John's Blog</h4>
+					<ul class="nav nav-pills nav-stacked">
+						<li class="active"><a href="#section1">Home</a></li>
+						<li><a href="#section2">Friends</a></li>
+						<li><a href="#section3">Family</a></li>
+						<li><a href="#section3">Photos</a></li>
+					</ul><br>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search Blog..">
+						<span class="input-group-btn">
+						<button class="btn btn-default" type="button">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+						</span>
+					</div>
+					</div>
+
+					<div class="col-sm-9">
+					<h4><small>RECENT POSTS</small></h4>
+					<hr>
+					<h2>I Love Food</h2>
+					<h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
+					<h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
+					<p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<br><br>
+					
+					<h4><small>RECENT POSTS</small></h4>
+					<hr>
+					<h2>Officially Blogging</h2>
+					<h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+					<h5><span class="label label-success">Lorem</span></h5><br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<hr>
+
+					<h4>Leave a Comment:</h4>
+					<form role="form">
+						<div class="form-group">
+						<textarea class="form-control" rows="3" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-success">Submit</button>
+					</form>
+					<br><br>
+					
+					<p><span class="badge">2</span> Comments:</p><br>
+					
+					<div class="row">
+						<div class="col-sm-2 text-center">
+						<img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+						</div>
+						<div class="col-sm-10">
+						<h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+						<p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<br>
+						</div>
+						<div class="col-sm-2 text-center">
+						<img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+						</div>
+						<div class="col-sm-10">
+						<h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+						<p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<br>
+						<p><span class="badge">1</span> Comment:</p><br>
+						<div class="row">
+							<div class="col-sm-2 text-center">
+							<img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+							</div>
+							<div class="col-xs-10">
+							<h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
+							<p>Me too! WOW!</p>
+							<br>
+							</div>
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				</div>
+		</body></html>
